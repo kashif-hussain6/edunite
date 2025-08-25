@@ -36,7 +36,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" className={inter.className}>
-      <body className="antialiased">
+      <body className="antialiased" suppressHydrationWarning={true}>
         <Header />
         {children}
       </body>
