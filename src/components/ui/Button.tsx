@@ -3,7 +3,7 @@
 import React from 'react';
 import { cn } from '@/lib/utils';
 import type { ButtonProps } from '@/types';
-
+        
 const Button: React.FC<ButtonProps> = ({ 
   variant = 'default', 
   size = 'md', 
@@ -18,7 +18,7 @@ const Button: React.FC<ButtonProps> = ({
     ghost: "hover:bg-accent hover:text-accent-foreground",
     outline: "border border-input hover:bg-accent hover:text-accent-foreground",
     secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-  };
+  }; 
   
   const sizes = {
     sm: "h-9 px-3 rounded-md text-sm",
@@ -42,6 +42,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 export default Button;
+
 
 
 
