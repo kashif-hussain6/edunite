@@ -1,5 +1,27 @@
 import { LucideIcon } from 'lucide-react';
 
+// Color types
+export type ModuleColor = 'blue' | 'green' | 'purple' | 'orange' | 'teal' | 'indigo';
+
+export interface ColorClasses {
+  bg: string;
+  border: string;
+  icon: string;
+  accent: string;
+  hover: string;
+}
+
+// Module types
+export interface Module {
+  id: string;
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  features: string[];
+  image: string;
+  color: ModuleColor;
+}
+
 // Feature types
 export interface Feature {
   icon: LucideIcon;
@@ -102,3 +124,5 @@ export interface PageMetadata {
   keywords?: string[];
   ogImage?: string;
 }
+
+

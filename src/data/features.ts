@@ -61,3 +61,5 @@ export const featuresData: Feature[] = [
     description: "Access your school management system anywhere, anytime with automatic backups and updates."
   }
 ];
+
+
