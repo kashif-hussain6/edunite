@@ -148,3 +148,27 @@ export const colorClasses: Record<ModuleColor, ColorClasses> = {
 };
 
 
+
+
+export const pricingColorClasses = {
+  blue: {
+    gradient: 'from-blue-500 to-blue-600',
+    border: 'border-blue-200',
+    icon: 'text-blue-600',
+    badge: 'bg-blue-100 text-blue-700'
+  },
+  indigo: {
+    gradient: 'from-indigo-500 to-indigo-600',
+    border: 'border-indigo-200',
+    icon: 'text-indigo-600',
+    badge: 'bg-indigo-100 text-indigo-700'
+  },
+  purple: {
+    gradient: 'from-purple-500 to-purple-600',
+    border: 'border-purple-200',
+    icon: 'text-purple-600',
+    badge: 'bg-purple-100 text-purple-700'
+  }
+};
+
+
