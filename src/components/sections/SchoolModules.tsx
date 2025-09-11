@@ -2,6 +2,7 @@
 
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import {  ChevronRight, Check } from 'lucide-react';
 import { modules, colorClasses } from '@/constants';
 import { Module } from '@/types';
@@ -46,9 +47,11 @@ const SchoolModules = () => {
                   </div>
                   
                   <div className="mb-4">
-                    <img
+                    <Image
                       src={module.image}
                       alt={module.title}
+                      width={600}
+                      height={400}
                       className="w-full h-32 object-cover rounded-lg"
                     />
                   </div>
@@ -119,9 +122,11 @@ const SchoolModules = () => {
               {activeModuleData && (
                 <div className="bg-white rounded-2xl shadow-lg overflow-hidden animate-fade-in border border-gray-200 h-full flex flex-col">
                   <div className="relative h-64 flex-shrink-0">
-                    <img
+                    <Image
                       src={activeModuleData.image}
                       alt={activeModuleData.title}
+                      width={600}
+                      height={400}
                       className="w-full h-full object-cover"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
