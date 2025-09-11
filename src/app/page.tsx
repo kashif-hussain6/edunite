@@ -1,5 +1,6 @@
 import Features from "@/components/sections/Features";
 import Hero from "@/components/sections/Hero";
+import Pricing from "@/components/sections/Pricing";
 import SchoolModules from "@/components/sections/SchoolModules";
 
 export default function HomePage() {
@@ -8,6 +9,7 @@ export default function HomePage() {
       <Hero />
       <Features />
       <SchoolModules />
+      <Pricing />
     </main>
   );
 }
