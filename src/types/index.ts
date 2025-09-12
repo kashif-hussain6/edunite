@@ -117,6 +117,63 @@ export interface SiteConfig {
   };
 }
 
+// Testimonial types
+export interface Testimonial {
+  id: string;
+  name: string;
+  role: string;
+  image: string;
+  content: string;
+  rating: number;
+  company?: string;
+}
+
+export interface TestimonialsSection {
+  title: string;
+  subtitle: string;
+  testimonials: Testimonial[];
+}
+
+// Footer types
+export interface FooterLink {
+  label: string;
+  href: string;
+  isExternal?: boolean;
+}
+
+export interface FooterSection {
+  title: string;
+  links: FooterLink[];
+}
+
+export interface ContactInfo {
+  email: string;
+  phone: string;
+  address: {
+    line1: string;
+    line2: string;
+  };
+}
+
+export interface SocialLink {
+  name: string;
+  href: string;
+  icon: React.ComponentType<{ className?: string }>;
+}
+
+export interface FooterData {
+  company: {
+    name: string;
+    description: string;
+    logo: React.ComponentType<{ className?: string }>;
+  };
+  sections: FooterSection[];
+  contact: ContactInfo;
+  social: SocialLink[];
+  legal: FooterLink[];
+  copyright: string;
+}
+
 // Metadata types
 export interface PageMetadata {
   title: string;
